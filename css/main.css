@@ -1,0 +1,52 @@
+
+body{
+	background-color:#0e293ef5;
+	font-family: montserrat;
+	overflow:hidden;
+}
+.navbar
+{
+height:100%;
+width:400px;
+background-color:#0e293eb3;
+float:right;
+
+}
+ul
+{
+list-style: none;
+}
+ul li
+{
+	padding:20px;
+	
+}
+#suggested_cities li:hover
+{
+	cursor: pointer;
+	background-color: gray;
+	transition-duration: 0.5s;
+}
+@keyframes slidein
+{
+	from{position:relative;
+		bottom:-25px;
+	}
+	to {
+		position:relative;
+		bottom:0px;
+	}
+}
+section
+{
+	animation:move 2s;
+	animation-name: slidein;
+}
+#suggested_cities
+{
+	color:white;
+	margin:0;
+	padding:0;
+	text-align:left;
+	font-size:15px;
+}
